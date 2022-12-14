@@ -39,7 +39,6 @@ class News{
         }
     };
 
-
     displayGrid(){
         let container  = document.querySelector(".articles-container");
         let header = document.querySelector(".articles-header")
@@ -71,10 +70,7 @@ class News{
  
 }
 
-
-
 const search = document.querySelector(".search-input");
-
 let news = new News();
 search.addEventListener("keypress", function(e){
     if(e.key === "Enter"){
