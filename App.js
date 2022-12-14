@@ -1,6 +1,7 @@
 class News{ 
     constructor(){
-        this.key = "3ce0e53a374b12f1923c58f0841a269d";
+        //ENTER API KEY IN this.key
+        this.key = "ENTER MEDIASTACK API KEY HERE";
         this.searchItem = null;
         this.data = null; 
         this.getItem = null;
@@ -21,6 +22,7 @@ class News{
         }
         
         catch(e){
+            console.log(e);
             if(e instanceof TypeError && this.data.data.length == 0){
                 let container  = document.querySelector(".articles-header");
                 container.style.display = "block";
